@@ -490,9 +490,11 @@ End of what is needed to get working
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
 #if ENABLED(E3D)
-  #define HEATER_0_MAXTEMP 300
-#elif ENABLED(E3D_Extreme)
-  #define HEATER_0_MAXTEMP 320
+  #if ENABLED(E3D_Extreme)
+    #define HEATER_0_MAXTEMP 320
+  #else
+    #define HEATER_0_MAXTEMP 300
+  #endif
 #else 
   #define HEATER_0_MAXTEMP 275
 #endif
