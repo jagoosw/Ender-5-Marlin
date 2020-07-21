@@ -79,6 +79,7 @@
 #define E3D_Extreme // Enable this if you want to print at more than 285 degrees, this is strongly not reccomended by E3D but I neeeded it briefly. They say a little over isn't too risky but should not be done long term
 #define chamber // Enable this to if you have a chamber with the thermistor in the E1 thermistor connector, the heater in the other heater port (beside the bed heater) and the hotend heatsink fan which was prevuiysly in this hole in a different, always on, fan pin
 #define TMC2209_Enabled // Enable if you have TMC2209 drivers
+#define SKR_14_Turbo // Enable if SKR 1.4 turbo
 
 /**
  * *** VENDORS PLEASE READ ***
@@ -133,8 +134,8 @@
 //#define BLUETOOTH
 
 // Choose the name from boards.h that matches your setup
-#ifndef MOTHERBOARD
-  #if ENABLED(SKR_1.4_Turbo)
+#ifndef MOTHERBOARD 
+  #if ENABLED(SKR_14_Turbo)
     #define MOTHERBOARD BOARD_BTT_SKR_V1_4_TURBO 
   #else
     #define MOTHERBOARD BOARD_MELZI_CREALITY
