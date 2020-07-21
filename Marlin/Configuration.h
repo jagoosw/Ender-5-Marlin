@@ -81,8 +81,8 @@ All you need to edit is the next few lines
 */
 
 //#define E3D // Enable this if you have an E3D all metal hotend
-#define E3D_Extreme // Enable this if you want to print at more than 285 degrees, this is strongly not reccomended by E3D but I neeeded it briefly. They say a little over isn't too risky but should not be done long term
-#define chamber // Enable this to if you have a chamber with the thermistor in the E1 thermistor connector, the heater in the other heater port (beside the bed heater) and the hotend heatsink fan which was prevuiysly in this hole in a different, always on, fan pin
+//#define E3D_Extreme // Enable this if you want to print at more than 285 degrees, this is strongly not reccomended by E3D but I neeeded it briefly. They say a little over isn't too risky but should not be done long term
+//define chamber // Enable this to if you have a chamber with the thermistor in the E1 thermistor connector, the heater in the other heater port (beside the bed heater) and the hotend heatsink fan which was prevuiysly in this hole in a different, always on, fan pin
 #define SKR_14_Turbo // Enable if SKR 1.4 turbo
 
 /*Driver options
@@ -95,7 +95,7 @@ All you need to edit is the next few lines
  *          TMC26X,  TMC26X_STANDALONE,  TMC2660, TMC2660_STANDALONE,
  *          TMC5130, TMC5130_STANDALONE, TMC5160, TMC5160_STANDALONE
 */
-#define drivers TMC2209 // Set the drivers you have (e.g. TMC2209)
+//#define drivers TMC2209 // Set the drivers you have (e.g. TMC2209) - comment out for default drivers
 
 /*
 
