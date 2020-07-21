@@ -165,7 +165,7 @@
   #define TEMP_0_PIN                       P0_24_A1
 #else
   #define TEMP_1_PIN                      P0_23_A0
-
+#endif
 
 //
 // Software SPI pins for TMC2130 stepper drivers

@@ -71,7 +71,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(thisiskeithb and jagoosw, Ender-5)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(jagoosw, Ender-5)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 
@@ -483,9 +483,6 @@
 #define HEATER_6_MAXTEMP 300
 #define HEATER_7_MAXTEMP 300
 #define BED_MAXTEMP      125
-#if ENABLED(chamber)
-  #define CHAMBER_MAXTEMP 70
-#endif
 
 //===========================================================================
 //============================= PID Settings ================================
