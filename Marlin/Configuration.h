@@ -134,7 +134,11 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_BTT_SKR_V1_4_TURBO 
+  #if ENABLED(SKR_1.4_Turbo)
+    #define MOTHERBOARD BOARD_BTT_SKR_V1_4_TURBO 
+  #else
+    #define MOTHERBOARD BOARD_MELZI_CREALITY
+  #endif
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
